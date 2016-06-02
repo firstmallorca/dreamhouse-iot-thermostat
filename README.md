@@ -1,9 +1,9 @@
 DreamHouse Thermostat
 ---------------------
 
-This sample app allows you to control an Ecobee3 Smart Thermostat from the DreamHouse app.
+This sample app allows you to control an Ecobee3 Smart Thermostat from the DreamHouse app.  Check out a demo:
 
-    <TODO DEMO>
+    [![Demo](http://img.youtube.com/vi/83BdO5WjYh8/0.jpg)](http://www.youtube.com/watch?v=83BdO5WjYh8)
 
 To get started you will need an [Ecobee3 Smart Thermostat](https://www.amazon.com/gp/product/B00ZIRV39M/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00ZIRV39M&linkCode=as2&tag=jamesward-20&linkId=0708922d14ecfb1007ac2b1c24c80d3a) and either hook it to an actual HVAC or [mock HVAC](https://www.jamesward.com/2016/05/17/building-a-mock-hvac-for-smart-thermostat-demos) system.  Setup the thermostat and connect it to the internet and your Ecobee account.
 
