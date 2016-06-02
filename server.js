@@ -2,6 +2,7 @@ const process = require('process');
 const express = require('express');
 const axios = require('axios');
 const cache = require('memory-cache');
+const cors = require('cors');
 
 const port = process.env.PORT || 5000;
 
@@ -17,6 +18,7 @@ if (ecobeeAppKey == null) {
 
 const app = express();
 app.enable('trust proxy');
+app.use(cors());
 
 function cacheAuth(authData) {
   cache.put(ACCESS_TOKEN, authData[ACCESS_TOKEN], authData['expires_in'] * 1000);
@@ -134,6 +136,22 @@ app.get('/off', (req, res) => {
       updateThermostatTemp(newTemp, accessToken).then(updateData => {
         res.json(updateData);
       });
+    });
+  });
+});
+
+app.get('/get', (req, res) => {
+  withAccessToken('/get', req, res, accessToken => {
+    thermostats(accessToken).then(thermostatsJson => {
+      res.json(thermostatsJson).end();
+    });
+  });
+});
+
+app.get('/set', (req, res) => {
+  withAccessToken('/set', req, res, accessToken => {
+    updateThermostatTemp(req.query.temp, accessToken).then(updateData => {
+      res.json(updateData).end();
     });
   });
 });
