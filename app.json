@@ -1,0 +1,13 @@
+{
+  "name": "dreamhouse-thermostat",
+  "description": "DreamHouse Thermostat",
+  "keywords": [
+    "app-cloud"
+  ],
+  "repository": "https://github.com/dreamhouseapp/dreamhouse-thermostat",
+  "env": {
+    "ECOBEE_APP_KEY": {
+      "description": "Your Ecobee Developer App Key"
+    }
+  }
+}

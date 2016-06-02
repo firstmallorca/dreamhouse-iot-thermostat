@@ -1,0 +1,18 @@
+{
+  "name": "dreamhouse-thermostat",
+  "engines": {
+    "node": "^6.2.0"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "axios": "^0.12.0",
+    "memory-cache": "^0.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  }
+}
