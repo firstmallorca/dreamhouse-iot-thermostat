@@ -1,7 +1,7 @@
 {
   "name": "dreamhouse-thermostat",
   "engines": {
-    "node": "^6.2.0"
+    "node": "6.11.1"
   },
   "scripts": {
     "dev": "nodemon server.js",
